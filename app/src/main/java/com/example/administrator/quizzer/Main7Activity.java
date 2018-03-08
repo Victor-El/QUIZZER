@@ -4,9 +4,13 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RadioButton;
+import android.widget.Toast;
+
+import static com.example.administrator.quizzer.MainActivity.gotIt;
 
 public class Main7Activity extends AppCompatActivity {
-    public void start (View v) {
+    public void start(View v) {
         Intent nextActivity = new Intent(Main7Activity.this, Main8Activity.class);
         startActivity(nextActivity);
     }
@@ -15,5 +19,21 @@ public class Main7Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main7);
+    }
+
+    public void score(View v) {
+        RadioButton rb = (RadioButton) findViewById(R.id.radio_bt72);
+        if (rb.isChecked()) {
+            gotIt = gotIt + 1;
+            Toast.makeText(this, "Success!!!, you earned " + gotIt + " points so far", Toast.LENGTH_SHORT).show();
+            if (rb.isChecked()) {
+                rb.setClickable(false);
+            }
+
+        } else {
+            gotIt = gotIt + 0;
+            Toast.makeText(this, "Failure!!!, you earned " + gotIt + "  points so far", Toast.LENGTH_SHORT).show();
+
+        }
     }
 }

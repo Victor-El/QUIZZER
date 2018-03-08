@@ -11,45 +11,63 @@
     android:background="@drawable/gradient4"
     android:orientation="vertical"
     tools:context="com.example.administrator.quizzer.Main8Activity">
+
     <TextView
         android:layout_width="wrap_content"
+        android:background="@drawable/mo"
+        android:paddingLeft="15dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:text="WHAT IS THE SURFACE TEMPERATURE OF THE SUN?"
         android:textSize="30sp"
-        android:textColor="#000000"/>
+        android:textColor="#ffffff" />
+
     <RadioGroup
         android:id="@+id/radio_gp"
+        android:background="@drawable/mo"
         android:layout_weight="3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp">
+
         <RadioButton
+            android:background="@drawable/button"
+            android:onClick="score"
             android:id="@+id/radio_bt1"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="200,000deg C"/>
+            android:text="200,000deg C" />
+
         <RadioButton
-            android:id="@+id/radio_bt2"
+            android:background="@drawable/button"
+            android:onClick="score"
+            android:id="@+id/radio_bt82"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="6,000deg C"/>
+            android:text="6,000deg C" />
+
         <RadioButton
+            android:background="@drawable/button"
+            android:onClick="score"
             android:id="@+id/radio_bt3"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="15,000deg C"/>
+            android:text="15,000deg C" />
+
         <RadioButton
+            android:background="@drawable/button"
+            android:onClick="score"
             android:id="@+id/radio_bt4"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1,000,000deg C"/>
+            android:text="1,000,000deg C" />
 
     </RadioGroup>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,8 +75,8 @@
         android:layout_marginTop="20dp"
         android:textSize="20sp"
         android:layout_gravity="center"
-        android:background="#80000000"
+        android:background="@drawable/button"
         android:onClick="start"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
 </LinearLayout>
