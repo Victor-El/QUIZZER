@@ -6,15 +6,15 @@
         android:gradientRadius="45"
         android:centerX="35%"
         android:centerY="50%"
-        android:startColor="#ff0000"
-        android:endColor="#ff0000"
+        android:startColor="#0000ff"
+        android:endColor="#0000ff"
         android:type="radial" />
     <size
         android:width="260dp"
         android:height="60dp" />
     <stroke
         android:width="3dp"
-        android:color="#800000" />
+        android:color="#0008ff" />
 
 
 </shape>

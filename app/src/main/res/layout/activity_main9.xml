@@ -8,23 +8,30 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/gradient4"
+    android:background="#00ffff"
     android:orientation="vertical"
     tools:context="com.example.administrator.quizzer.Main9Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:background="@drawable/lay">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:paddingLeft="15dp"
-        android:background="@drawable/mo"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:text="WHO IS THE FATHER OF MEDICINE?"
         android:textSize="30sp"
-        android:textColor="#ffffff" />
+        android:textStyle="bold"
+        android:textColor="#00ffff" />
 
     <RadioGroup
         android:id="@+id/radio_gp"
-        android:background="@drawable/mo"
         android:layout_weight="3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,7 +39,8 @@
 
         <RadioButton
             android:onClick="score"
-            android:background="@drawable/button"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:id="@+id/radio_bt1"
             android:layout_width="wrap_content"
@@ -41,7 +49,8 @@
 
         <RadioButton
             android:onClick="score"
-            android:background="@drawable/button"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:id="@+id/radio_bt2"
             android:layout_width="wrap_content"
@@ -49,7 +58,8 @@
             android:text="HIPPOCRATES" />
 
         <RadioButton
-            android:background="@drawable/button"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:onClick="score"
             android:layout_weight="1"
             android:id="@+id/radio_bt93"
@@ -58,7 +68,8 @@
             android:text="IMHOTEP" />
 
         <RadioButton
-            android:background="@drawable/button"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:onClick="score"
             android:layout_weight="1"
             android:id="@+id/radio_bt4"
@@ -67,16 +78,17 @@
             android:text="DEMOCRITUS" />
 
     </RadioGroup>
-
+    </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SUBMIT"
+        android:text="RESET THE QUIZ"
         android:layout_marginTop="20dp"
         android:textSize="20sp"
-        android:layout_gravity="center"
+        android:layout_gravity="center_horizontal|bottom"
         android:background="@drawable/button"
-        android:onClick="start"
+        android:onClick="reset"
         android:textStyle="bold" />
+
 
 </LinearLayout>
